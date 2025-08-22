@@ -23,7 +23,7 @@ async function PresentAlert(Style) {
 				TextField++; break;
 		}
 	}
-	const ActionIndex = Style.type == "alert"
+	const ActionIndex = Style.type === "alert"
 		? await Art.presentAlert()
 		: await Art.presentSheet();
 	let TextList = [];
